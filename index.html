@@ -49,6 +49,11 @@ tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-secondary":"#ffffff
 
   /* form focus state */
   .field-input:focus{outline:none;box-shadow:0 0 0 1px #8e4e1e;}
+
+  /* Anchor targets: offset for the fixed header, and a CSS-level smooth-scroll fallback */
+  html{scroll-behavior:smooth;}
+  #home, #about, #store, #contact, #bespoke-experience{scroll-margin-top:84px;}
+  @media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto;} }
 </style>
 </head>
 <body class="bg-background font-body-md text-body-md text-on-surface antialiased">
@@ -842,6 +847,23 @@ tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-secondary":"#ffffff
 </footer>
 
 <script>
+  // ---------- In-page nav scrolling (robust, works even if native #hash jump is blocked) ----------
+  (function(){
+    var HEADER_OFFSET = 84;
+    document.querySelectorAll('a[href^="#"]').forEach(function(link){
+      var targetId = link.getAttribute('href');
+      if (!targetId || targetId === '#') return;
+      link.addEventListener('click', function(e){
+        var target = document.querySelector(targetId);
+        if (!target) return; // let the browser handle it if we can't find a match
+        e.preventDefault();
+        var top = target.getBoundingClientRect().top + window.pageYOffset - HEADER_OFFSET;
+        window.scrollTo({ top: top, behavior: 'smooth' });
+        if (history.pushState) history.pushState(null, '', targetId);
+      });
+    });
+  })();
+
   // ---------- Mobile menu ----------
   (function(){
     var btn = document.getElementById('hamburger-btn');
