@@ -55,6 +55,24 @@ tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-secondary":"#ffffff
   html{scroll-behavior:smooth;}
   #home, #about, #store, #contact, #bespoke-experience{scroll-margin-top:84px;}
   @media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto;} }
+
+  /* WhatsApp floating button */
+  #whatsapp-float{
+    position:fixed;
+    bottom:22px;
+    right:22px;
+    z-index:60;
+    width:56px;
+    height:56px;
+    border-radius:9999px;
+    background:#25D366;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    box-shadow:0 6px 18px rgba(0,0,0,0.25);
+    transition:transform .2s ease;
+  }
+  #whatsapp-float:hover{transform:scale(1.08);}
 </style>
 </head>
 <body class="bg-background font-body-md text-body-md text-on-surface antialiased">
@@ -66,7 +84,7 @@ tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-secondary":"#ffffff
         <span class="w-9 h-9 shrink-0 rounded-full bg-primary text-on-primary flex items-center justify-center">
           <span class="material-symbols-outlined text-[18px]">local_mall</span>
         </span>
-        <span class="font-title-editorial text-title-editorial tracking-wider text-primary uppercase truncate">Emmalex</span>
+        <span class="font-title-editorial text-title-editorial tracking-wider text-primary uppercase truncate">E &amp; C Okems Ventures</span>
       </a>
       <span class="hidden xl:inline-block font-label-uppercase text-label-uppercase text-on-surface-variant/70 uppercase pl-space-xs tracking-widest whitespace-nowrap">Firenze • Milano</span>
     </div>
@@ -138,7 +156,7 @@ tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-secondary":"#ffffff
     </h1>
 
     <p class="hero-in font-body-lg text-body-lg text-surface-container-high max-w-2xl mx-auto font-light leading-relaxed mb-space-xl px-2" style="transition-delay:.25s">
-      We travel to the finest ateliers in Italy, France, and England to hand-select full-grain calfskin and vegetable-tanned leather shoes worth putting our name behind — then bring them home to Florence for you.
+      We travel to the finest ateliers in Italy, France, and England to hand-select full-grain calfskin and vegetable-tanned leather shoes worth putting our name behind — then bring them home for you.
     </p>
 
     <div class="hero-in flex flex-col sm:flex-row items-center justify-center gap-space-md w-full max-w-md mx-auto mb-space-xl" style="transition-delay:.35s">
@@ -189,7 +207,7 @@ tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-secondary":"#ffffff
         <h2 class="font-headline-lg text-headline-lg-mobile sm:text-headline-lg text-primary mt-2">The Masterpiece Series</h2>
       </div>
       <p class="font-body-md text-body-md text-on-surface-variant max-w-md">
-        Every pair here has been hand-picked from renowned makers and inspected at our Firenze counter before it reaches you.
+        Every pair here has been hand-picked from renowned makers and inspected before it reaches you.
       </p>
     </div>
 
@@ -231,11 +249,11 @@ tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-secondary":"#ffffff
             <div class="flex items-center justify-between gap-3">
               <div>
                 <span class="font-label-uppercase text-[10px] text-on-surface-variant uppercase block">Made to Order</span>
-                <span class="font-headline-sm text-headline-sm text-primary">$680</span>
+                <span class="font-headline-sm text-headline-sm text-primary">₦1,020,000</span>
               </div>
-              <button class="px-5 py-2.5 bg-primary hover:bg-secondary text-on-primary font-label-uppercase text-label-uppercase uppercase tracking-wider transition-colors flex items-center gap-2" type="button">
-                <span class="material-symbols-outlined text-[16px]">shopping_bag</span><span>Acquire</span>
-              </button>
+              <a href="https://wa.me/2347041752172?text=Hello%2C%20I%27m%20interested%20in%20The%20Medallion%20Noir%20Bit%20Loafer%20(%E2%82%A61%2C020%2C000)." target="_blank" rel="noopener" class="px-5 py-2.5 bg-primary hover:bg-secondary text-on-primary font-label-uppercase text-label-uppercase uppercase tracking-wider transition-colors flex items-center gap-2">
+                <span class="material-symbols-outlined text-[16px]">shopping_bag</span><span>Order on WhatsApp</span>
+              </a>
             </div>
           </div>
         </div>
@@ -276,12 +294,12 @@ tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-secondary":"#ffffff
             </div>
             <div class="flex items-center justify-between gap-3">
               <div>
-                <span class="font-label-uppercase text-[10px] text-on-surface-variant uppercase block">In Stock Firenze</span>
-                <span class="font-headline-sm text-headline-sm text-primary">$720</span>
+                <span class="font-label-uppercase text-[10px] text-on-surface-variant uppercase block">In Stock</span>
+                <span class="font-headline-sm text-headline-sm text-primary">₦1,080,000</span>
               </div>
-              <button class="px-5 py-2.5 bg-primary hover:bg-secondary text-on-primary font-label-uppercase text-label-uppercase uppercase tracking-wider transition-colors flex items-center gap-2" type="button">
-                <span class="material-symbols-outlined text-[16px]">shopping_bag</span><span>Acquire</span>
-              </button>
+              <a href="https://wa.me/2347041752172?text=Hello%2C%20I%27m%20interested%20in%20The%20Savoy%20Grain%20Horsebit%20Loafer%20(%E2%82%A61%2C080%2C000)." target="_blank" rel="noopener" class="px-5 py-2.5 bg-primary hover:bg-secondary text-on-primary font-label-uppercase text-label-uppercase uppercase tracking-wider transition-colors flex items-center gap-2">
+                <span class="material-symbols-outlined text-[16px]">shopping_bag</span><span>Order on WhatsApp</span>
+              </a>
             </div>
           </div>
         </div>
@@ -323,11 +341,11 @@ tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-secondary":"#ffffff
             <div class="flex items-center justify-between gap-3">
               <div>
                 <span class="font-label-uppercase text-[10px] text-on-surface-variant uppercase block">Limited Run of 100</span>
-                <span class="font-headline-sm text-headline-sm text-primary">$750</span>
+                <span class="font-headline-sm text-headline-sm text-primary">₦1,125,000</span>
               </div>
-              <button class="px-5 py-2.5 bg-primary hover:bg-secondary text-on-primary font-label-uppercase text-label-uppercase uppercase tracking-wider transition-colors flex items-center gap-2" type="button">
-                <span class="material-symbols-outlined text-[16px]">shopping_bag</span><span>Acquire</span>
-              </button>
+              <a href="https://wa.me/2347041752172?text=Hello%2C%20I%27m%20interested%20in%20The%20Monogram%20Lug%20Loafer%20(%E2%82%A61%2C125%2C000)." target="_blank" rel="noopener" class="px-5 py-2.5 bg-primary hover:bg-secondary text-on-primary font-label-uppercase text-label-uppercase uppercase tracking-wider transition-colors flex items-center gap-2">
+                <span class="material-symbols-outlined text-[16px]">shopping_bag</span><span>Order on WhatsApp</span>
+              </a>
             </div>
           </div>
         </div>
@@ -368,11 +386,11 @@ tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-secondary":"#ffffff
             <div class="flex items-center justify-between gap-3">
               <div>
                 <span class="font-label-uppercase text-[10px] text-on-surface-variant uppercase block">Archive Piece</span>
-                <span class="font-headline-sm text-headline-sm text-primary">$640</span>
+                <span class="font-headline-sm text-headline-sm text-primary">₦960,000</span>
               </div>
-              <button class="px-5 py-2.5 bg-primary hover:bg-secondary text-on-primary font-label-uppercase text-label-uppercase uppercase tracking-wider transition-colors flex items-center gap-2" type="button">
-                <span class="material-symbols-outlined text-[16px]">shopping_bag</span><span>Acquire</span>
-              </button>
+              <a href="https://wa.me/2347041752172?text=Hello%2C%20I%27m%20interested%20in%20The%20Riviera%20Spectator%20Tassel%20Loafer%20(%E2%82%A6960%2C000)." target="_blank" rel="noopener" class="px-5 py-2.5 bg-primary hover:bg-secondary text-on-primary font-label-uppercase text-label-uppercase uppercase tracking-wider transition-colors flex items-center gap-2">
+                <span class="material-symbols-outlined text-[16px]">shopping_bag</span><span>Order on WhatsApp</span>
+              </a>
             </div>
           </div>
         </div>
@@ -413,11 +431,11 @@ tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-secondary":"#ffffff
             <div class="flex items-center justify-between gap-3">
               <div>
                 <span class="font-label-uppercase text-[10px] text-on-surface-variant uppercase block">In-Store Now</span>
-                <span class="font-headline-sm text-headline-sm text-primary">$590</span>
+                <span class="font-headline-sm text-headline-sm text-primary">₦885,000</span>
               </div>
-              <button class="px-5 py-2.5 bg-primary hover:bg-secondary text-on-primary font-label-uppercase text-label-uppercase uppercase tracking-wider transition-colors flex items-center gap-2" type="button">
-                <span class="material-symbols-outlined text-[16px]">shopping_bag</span><span>Acquire</span>
-              </button>
+              <a href="https://wa.me/2347041752172?text=Hello%2C%20I%27m%20interested%20in%20The%20Sovereign%20Ochre%20Derby%20(%E2%82%A6885%2C000)." target="_blank" rel="noopener" class="px-5 py-2.5 bg-primary hover:bg-secondary text-on-primary font-label-uppercase text-label-uppercase uppercase tracking-wider transition-colors flex items-center gap-2">
+                <span class="material-symbols-outlined text-[16px]">shopping_bag</span><span>Order on WhatsApp</span>
+              </a>
             </div>
           </div>
         </div>
@@ -429,20 +447,20 @@ tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-secondary":"#ffffff
           <span class="font-label-uppercase text-label-uppercase text-secondary-container tracking-widest uppercase block mb-3">Personal Shopping Service</span>
           <h3 class="font-headline-md text-headline-md text-surface mb-4">Bespoke Sourcing &amp; Personalization</h3>
           <p class="font-body-md text-body-md text-surface-container-high mb-6">
-            We commission a personal last on your behalf through our partner ateliers, matched to the precise contours of your foot and finished in rare leathers with hand-engraved brass initials.
+            We source a personal last on your behalf through our partner ateliers, matched to the precise contours of your foot and finished in rare leathers with hand-engraved brass initials.
           </p>
           <ul class="space-y-3 font-body-sm text-body-sm text-surface-container-high mb-8">
             <li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary-container text-base">check_circle</span><span>Custom leather &amp; patina selection</span></li>
             <li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary-container text-base">check_circle</span><span>Personalized sole engraving &amp; brass toe-plates</span></li>
-            <li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary-container text-base">check_circle</span><span>Private fitting sessions in Florence or Milan</span></li>
+            <li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary-container text-base">check_circle</span><span>Private fitting sessions on request</span></li>
           </ul>
         </div>
         <div class="relative z-10 pt-4 border-t border-outline-variant/20 flex flex-col sm:flex-row items-center justify-between gap-4">
           <div>
             <span class="font-label-uppercase text-[10px] text-surface-container uppercase block">Starting from</span>
-            <span class="font-headline-sm text-headline-sm text-surface">$1,450</span>
+            <span class="font-headline-sm text-headline-sm text-surface">₦2,175,000</span>
           </div>
-          <a class="w-full sm:w-auto px-6 py-3 bg-secondary hover:bg-secondary-container hover:text-on-secondary-fixed text-on-secondary font-label-uppercase text-label-uppercase tracking-widest uppercase transition-colors text-center" href="#contact">
+          <a href="https://wa.me/2347041752172?text=Hello%2C%20I%27d%20like%20to%20request%20a%20bespoke%20commission." target="_blank" rel="noopener" class="w-full sm:w-auto px-6 py-3 bg-secondary hover:bg-secondary-container hover:text-on-secondary-fixed text-on-secondary font-label-uppercase text-label-uppercase tracking-widest uppercase transition-colors text-center">
             Request Bespoke Commission
           </a>
         </div>
@@ -469,12 +487,12 @@ tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-secondary":"#ffffff
       </div>
 
       <div class="reveal lg:col-span-6 flex flex-col justify-center">
-        <span class="font-label-uppercase text-label-uppercase text-secondary tracking-[0.25em] uppercase mb-2">The Florentine Heritage</span>
+        <span class="font-label-uppercase text-label-uppercase text-secondary tracking-[0.25em] uppercase mb-2">Our Heritage</span>
         <h2 class="font-headline-lg text-headline-lg-mobile sm:text-headline-lg text-primary mb-6">
-          A Century Of Knowing Which Shoes Are Worth Selling
+          Years Of Knowing Which Shoes Are Worth Selling
         </h2>
         <p class="font-body-md text-body-md text-on-surface-variant mb-10 leading-relaxed">
-          Founded along the banks of the Arno in 1928, Emmalex remains a family-run house, not a factory. We travel to the ateliers of Italy, France, and England, and only bring home pairs built on hand-hammered cork footbeds and oak-tanned hides — never composite fillers.
+          E &amp; C Okems Ventures is a family-run shoe retailer, not a factory. We travel to the ateliers of Italy, France, and England, and only bring home pairs built on hand-hammered cork footbeds and oak-tanned hides — never composite fillers.
         </p>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
@@ -504,7 +522,7 @@ tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-secondary":"#ffffff
               <span class="material-symbols-outlined text-[20px]">build</span>
             </div>
             <h4 class="font-title-editorial text-title-editorial text-primary mb-1">Lifetime Restoration</h4>
-            <p class="font-body-sm text-body-sm text-on-surface-variant">Bring any pair bought from us back to our Florence counter, any year. We coordinate the strip, re-welt, and leather nourishment.</p>
+            <p class="font-body-sm text-body-sm text-on-surface-variant">Bring any pair bought from us back to us, any year. We coordinate the strip, re-welt, and leather nourishment.</p>
           </div>
         </div>
       </div>
@@ -516,7 +534,7 @@ tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-secondary":"#ffffff
 <section class="w-full py-16 sm:py-24 bg-background">
   <div class="max-w-[1440px] mx-auto px-margin-mobile lg:px-margin">
     <div class="reveal text-center max-w-2xl mx-auto mb-12 sm:mb-16">
-      <span class="font-label-uppercase text-label-uppercase text-secondary tracking-[0.25em] uppercase">Why Emmalex</span>
+      <span class="font-label-uppercase text-label-uppercase text-secondary tracking-[0.25em] uppercase">Why E &amp; C Okems Ventures</span>
       <h2 class="font-headline-lg text-headline-lg-mobile sm:text-headline-lg text-primary mt-2">The Difference Is In What We Refuse To Sell</h2>
       <p class="font-body-md text-body-md text-on-surface-variant mt-4">We don't manufacture a single shoe. We just refuse to sell you a bad one.</p>
     </div>
@@ -526,14 +544,14 @@ tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-secondary":"#ffffff
         <span class="material-symbols-outlined text-secondary text-3xl shrink-0">fact_check</span>
         <div>
           <h3 class="font-title-editorial text-title-editorial text-primary mb-2">Uncompromising Curation</h3>
-          <p class="font-body-sm text-body-sm text-on-surface-variant">Every pair is inspected by hand at our Firenze counter before it's offered for sale. If it doesn't meet the standard, it doesn't get a shelf.</p>
+          <p class="font-body-sm text-body-sm text-on-surface-variant">Every pair is inspected by hand before it's offered for sale. If it doesn't meet the standard, it doesn't get a shelf.</p>
         </div>
       </div>
       <div class="reveal flex gap-5 p-6 sm:p-8 bg-surface-container-lowest border-l-4 border-secondary shadow-sm">
         <span class="material-symbols-outlined text-secondary text-3xl shrink-0">history_edu</span>
         <div>
-          <h3 class="font-title-editorial text-title-editorial text-primary mb-2">Trusted Relationships Since 1928</h3>
-          <p class="font-body-sm text-body-sm text-on-surface-variant">Three generations of buyers, one family, and relationships with Europe's finest workshops that a new retailer simply can't replicate.</p>
+          <h3 class="font-title-editorial text-title-editorial text-primary mb-2">Trusted Relationships</h3>
+          <p class="font-body-sm text-body-sm text-on-surface-variant">A family-run business with relationships with Europe's finest workshops that a new retailer simply can't replicate.</p>
         </div>
       </div>
       <div class="reveal flex gap-5 p-6 sm:p-8 bg-surface-container-lowest border-l-4 border-secondary shadow-sm">
@@ -562,9 +580,9 @@ tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-secondary":"#ffffff
         <div class="lg:col-span-5 flex flex-col justify-between">
           <div>
             <span class="font-label-uppercase text-label-uppercase text-secondary uppercase tracking-[0.25em] mb-2 block">Personal Concierge Service</span>
-            <h2 class="font-headline-lg text-headline-lg-mobile sm:text-headline-lg text-primary mb-4">The Emmalex Shoe Finder &amp; Last Fitting</h2>
+            <h2 class="font-headline-lg text-headline-lg-mobile sm:text-headline-lg text-primary mb-4">The Shoe Finder &amp; Last Fitting</h2>
             <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-6">
-              Our concierge assists patrons globally with arch alignment, instep volume evaluation, and matching you to the right leather and maker. Begin your consultation below.
+              Our concierge assists patrons with arch alignment, instep volume evaluation, and matching you to the right leather and maker. Begin your consultation below.
             </p>
           </div>
           <div class="p-5 bg-surface-container-low border-l-2 border-secondary">
@@ -572,7 +590,7 @@ tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-secondary":"#ffffff
               <span class="material-symbols-outlined text-secondary">support_agent</span>
               <span class="font-label-uppercase text-label-uppercase text-primary uppercase">Private Stylist Available</span>
             </div>
-            <p class="font-caption text-caption text-on-surface-variant">Direct WhatsApp or video appointments with Senior Stylist Marco Valenti, Tuesday to Saturday.</p>
+            <p class="font-caption text-caption text-on-surface-variant">Direct WhatsApp or video appointments, Tuesday to Saturday.</p>
           </div>
         </div>
 
@@ -630,10 +648,10 @@ tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-secondary":"#ffffff
           </div>
 
           <div class="pt-6 border-t border-surface-container flex flex-col sm:flex-row items-center gap-4">
-            <a href="#contact" class="w-full sm:w-auto px-8 py-4 bg-primary text-on-primary font-label-uppercase text-label-uppercase uppercase tracking-[0.2em] hover:bg-secondary transition-colors text-center" type="button">
+            <a href="https://wa.me/2347041752172?text=Hello%2C%20I%27d%20like%20to%20speak%20to%20a%20stylist%20about%20my%20fitting." target="_blank" rel="noopener" class="w-full sm:w-auto px-8 py-4 bg-primary text-on-primary font-label-uppercase text-label-uppercase uppercase tracking-[0.2em] hover:bg-secondary transition-colors text-center">
               Connect With A Stylist
             </a>
-            <a href="#contact" class="w-full sm:w-auto px-6 py-4 bg-transparent text-primary hover:text-secondary font-label-uppercase text-label-uppercase uppercase tracking-wider transition-colors flex items-center justify-center gap-2">
+            <a href="https://wa.me/2347041752172?text=Hello%2C%20I%27d%20like%20to%20schedule%20a%20video%20fitting." target="_blank" rel="noopener" class="w-full sm:w-auto px-6 py-4 bg-transparent text-primary hover:text-secondary font-label-uppercase text-label-uppercase uppercase tracking-wider transition-colors flex items-center justify-center gap-2">
               <span class="material-symbols-outlined text-[18px]">calendar_month</span><span>Schedule Video Fitting</span>
             </a>
           </div>
@@ -661,7 +679,7 @@ tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-secondary":"#ffffff
             <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
             <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
           </div>
-          <p class="font-title-editorial text-title-editorial text-primary italic mb-6 leading-relaxed">"Emmalex has the sharpest eye in the business — old-world Tuscan craftsmanship curated with striking, contemporary confidence."</p>
+          <p class="font-title-editorial text-title-editorial text-primary italic mb-6 leading-relaxed">"E &amp; C Okems Ventures has the sharpest eye in the business — old-world craftsmanship curated with striking, contemporary confidence."</p>
         </div>
         <div class="pt-4 border-t border-surface-container">
           <span class="font-label-uppercase text-label-uppercase text-primary block uppercase font-bold">Robb Report</span>
@@ -697,7 +715,7 @@ tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-secondary":"#ffffff
         </div>
         <div class="pt-4 border-t border-surface-container">
           <span class="font-label-uppercase text-label-uppercase text-primary block uppercase font-bold">Lord Alexander Hastings</span>
-          <span class="font-caption text-caption text-on-surface-variant">Verified Patron • London, Mayfair</span>
+          <span class="font-caption text-caption text-on-surface-variant">Verified Patron</span>
         </div>
       </div>
     </div>
@@ -708,8 +726,8 @@ tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-secondary":"#ffffff
           <span class="material-symbols-outlined text-3xl">shield</span>
         </div>
         <div>
-          <h3 class="font-headline-sm text-headline-sm text-surface mb-1">The Emmalex Seal of Heritage Authentication</h3>
-          <p class="font-body-sm text-body-sm text-surface-container-high max-w-xl">Every pair you buy from us arrives with an engraved brass authentication plaque, registered in our Florence ledger, granting lifetime access to our restoration and care program.</p>
+          <h3 class="font-headline-sm text-headline-sm text-surface mb-1">The E &amp; C Okems Seal of Heritage Authentication</h3>
+          <p class="font-body-sm text-body-sm text-surface-container-high max-w-xl">Every pair you buy from us arrives with an engraved brass authentication plaque, registered in our ledger, granting lifetime access to our restoration and care program.</p>
         </div>
       </div>
       <a class="shrink-0 px-8 py-4 bg-surface text-primary hover:bg-secondary-container hover:text-on-secondary-fixed font-label-uppercase text-label-uppercase uppercase tracking-[0.2em] transition-colors" href="#store">View Current Selection</a>
@@ -723,35 +741,28 @@ tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-secondary":"#ffffff
     <div class="reveal text-center max-w-2xl mx-auto mb-12 sm:mb-16">
       <span class="font-label-uppercase text-label-uppercase text-secondary tracking-[0.25em] uppercase">Get In Touch</span>
       <h2 class="font-headline-lg text-headline-lg-mobile sm:text-headline-lg text-primary mt-2">Contact Us</h2>
-      <p class="font-body-md text-body-md text-on-surface-variant mt-4">Questions on sizing, an order, or a bespoke commission — our team replies within one business day.</p>
+      <p class="font-body-md text-body-md text-on-surface-variant mt-4">Questions on sizing, an order, or a bespoke commission — our team replies within one business day, or message us directly on WhatsApp.</p>
     </div>
 
     <div class="reveal grid grid-cols-1 lg:grid-cols-12 gap-10 bg-surface-container-lowest p-6 sm:p-8 lg:p-12 shadow-lg">
       <div class="lg:col-span-5 flex flex-col gap-8">
         <div>
-          <h3 class="font-title-editorial text-title-editorial text-primary mb-4">Salons</h3>
-          <div class="flex items-start gap-3 mb-4">
-            <span class="material-symbols-outlined text-secondary shrink-0">location_on</span>
-            <p class="font-body-sm text-body-sm text-on-surface-variant">Via de' Tornabuoni, 14<br/>50123 Firenze FI, Italy</p>
-          </div>
-          <div class="flex items-start gap-3">
-            <span class="material-symbols-outlined text-secondary shrink-0">location_on</span>
-            <p class="font-body-sm text-body-sm text-on-surface-variant">Via Montenapoleone, 8<br/>20121 Milano MI, Italy</p>
-          </div>
-        </div>
-        <div>
           <h3 class="font-title-editorial text-title-editorial text-primary mb-4">Reach Us Directly</h3>
           <div class="flex items-center gap-3 mb-3">
             <span class="material-symbols-outlined text-secondary shrink-0">call</span>
-            <a href="tel:+390212345678" class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors">+39 02 1234 5678</a>
+            <a href="tel:+2347041752172" class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors">+234 704 175 2172</a>
+          </div>
+          <div class="flex items-center gap-3 mb-3">
+            <span class="material-symbols-outlined text-secondary shrink-0">chat</span>
+            <a href="https://wa.me/2347041752172" target="_blank" rel="noopener" class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors">WhatsApp: +234 704 175 2172</a>
           </div>
           <div class="flex items-center gap-3 mb-3">
             <span class="material-symbols-outlined text-secondary shrink-0">mail</span>
-            <a href="mailto:concierge@emmalex.com" class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors">concierge@emmalex.com</a>
+            <a href="mailto:concierge@ecokemsventures.com" class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors">concierge@ecokemsventures.com</a>
           </div>
           <div class="flex items-center gap-3">
             <span class="material-symbols-outlined text-secondary shrink-0">schedule</span>
-            <p class="font-body-sm text-body-sm text-on-surface-variant">Tuesday – Saturday, 10:00 – 19:00 CET</p>
+            <p class="font-body-sm text-body-sm text-on-surface-variant">Tuesday – Saturday, 10:00 – 19:00</p>
           </div>
         </div>
       </div>
@@ -795,12 +806,19 @@ tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-secondary":"#ffffff
 </div>
 </main>
 
+<!-- Floating WhatsApp button -->
+<a id="whatsapp-float" href="https://wa.me/2347041752172?text=Hello%2C%20I%27d%20like%20to%20make%20an%20enquiry." target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="30" height="30" fill="#ffffff">
+    <path d="M16.001 3C9.096 3 3.5 8.596 3.5 15.5c0 2.42.674 4.68 1.844 6.605L3 29l7.09-2.31A12.44 12.44 0 0 0 16 28c6.904 0 12.5-5.596 12.5-12.5S22.905 3 16.001 3zm0 22.688a10.13 10.13 0 0 1-5.166-1.416l-.37-.22-4.206 1.37 1.38-4.1-.242-.386a10.13 10.13 0 0 1-1.585-5.436c0-5.605 4.56-10.166 10.19-10.166 5.63 0 10.19 4.56 10.19 10.166 0 5.605-4.56 10.188-10.191 10.188zm5.578-7.632c-.305-.153-1.807-.892-2.087-.994-.28-.102-.484-.153-.687.153-.203.306-.79.994-.968 1.198-.178.204-.356.23-.66.077-.305-.153-1.288-.475-2.453-1.514-.907-.809-1.52-1.808-1.698-2.114-.178-.306-.019-.471.134-.623.138-.137.305-.357.457-.535.153-.178.203-.306.305-.51.102-.204.05-.383-.025-.535-.076-.153-.687-1.657-.941-2.27-.248-.596-.5-.516-.687-.526l-.585-.01c-.203 0-.535.077-.815.383-.28.306-1.068 1.043-1.068 2.545 0 1.502 1.093 2.955 1.245 3.159.152.204 2.15 3.283 5.21 4.602.728.314 1.296.502 1.739.642.73.232 1.394.199 1.92.12.586-.087 1.807-.738 2.061-1.452.254-.713.254-1.324.178-1.452-.076-.128-.28-.204-.585-.357z"/>
+  </svg>
+</a>
+
 <footer class="w-full bg-surface-container-low text-on-surface py-space-xl">
   <div class="max-w-[1440px] mx-auto px-margin-mobile lg:px-margin">
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-gutter mb-space-xl">
       <div class="lg:col-span-4 flex flex-col pr-0 lg:pr-space-lg">
-        <h3 class="font-headline-sm text-headline-sm text-primary mb-space-sm">The Emmalex Gazette</h3>
-        <p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">Discreet announcements of new arrivals, limited releases, and private trunk-show dates across Europe and North America.</p>
+        <h3 class="font-headline-sm text-headline-sm text-primary mb-space-sm">The E &amp; C Okems Gazette</h3>
+        <p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">Discreet announcements of new arrivals, limited releases, and private trunk-show dates.</p>
         <div class="flex flex-col sm:flex-row gap-space-xs">
           <input class="field-input bg-surface px-space-md py-space-sm font-body-sm text-body-sm text-primary placeholder:text-outline flex-grow" placeholder="Enter your email" type="email"/>
           <button class="bg-primary text-on-primary px-space-md py-space-sm font-label-uppercase text-label-uppercase uppercase tracking-widest hover:bg-secondary hover:text-on-secondary transition-colors" type="button">Subscribe</button>
@@ -815,7 +833,7 @@ tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-secondary":"#ffffff
         <a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#store">Jodhpur Boots</a>
       </div>
       <div class="lg:col-span-2 flex flex-col gap-space-xs">
-        <h4 class="font-label-uppercase text-label-uppercase text-primary uppercase mb-space-xs tracking-wider">About Emmalex</h4>
+        <h4 class="font-label-uppercase text-label-uppercase text-primary uppercase mb-space-xs tracking-wider">About Us</h4>
         <a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#about">Our Story</a>
         <a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#about">How We Curate</a>
         <a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#about">Leather Care Guide</a>
@@ -829,15 +847,15 @@ tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-secondary":"#ffffff
         <a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#contact">Contact The Team</a>
       </div>
       <div class="lg:col-span-2 flex flex-col gap-space-xs">
-        <h4 class="font-label-uppercase text-label-uppercase text-primary uppercase mb-space-xs tracking-wider">Salons</h4>
-        <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Via de' Tornabuoni, 14<br/>50123 Firenze FI, Italy</p>
-        <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mt-space-xs">Via Montenapoleone, 8<br/>20121 Milano MI, Italy</p>
+        <h4 class="font-label-uppercase text-label-uppercase text-primary uppercase mb-space-xs tracking-wider">Reach Us</h4>
+        <a href="https://wa.me/2347041752172" target="_blank" rel="noopener" class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors">WhatsApp: +234 704 175 2172</a>
+        <a href="tel:+2347041752172" class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors">Call: +234 704 175 2172</a>
       </div>
     </div>
     <div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md text-on-surface-variant font-caption text-caption text-center md:text-left">
       <div class="flex flex-col sm:flex-row items-center gap-space-xs sm:gap-space-md">
-        <span class="font-label-uppercase text-label-uppercase tracking-widest text-primary uppercase">Emmalex Calzature dal 1928</span>
-        <span>© 2025 Emmalex Firenze S.r.l. All rights reserved.</span>
+        <span class="font-label-uppercase text-label-uppercase tracking-widest text-primary uppercase">E &amp; C Okems Ventures</span>
+        <span>© 2025 E &amp; C Okems Ventures. All rights reserved.</span>
       </div>
       <div class="flex items-center gap-space-lg">
         <a class="hover:text-primary transition-colors" href="#">Privacy</a>
