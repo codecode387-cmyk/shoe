@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&amp;family=Hanken+Grotesk:ital,wght@0,300..800;1,300..800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-secondary":"#ffffff","secondary-fixed-dim":"#ffb689","surface-variant":"#e5e2dd","error":"#ba1a1a","on-primary-fixed":"#251915","on-secondary-fixed":"#311300","on-secondary-container":"#763b0c","tertiary-fixed":"#ffdea4","on-error-container":"#93000a","surface-container-high":"#ebe8e3","surface-bright":"#fcf9f4","inverse-on-surface":"#f3f0eb","surface-container-low":"#f6f3ee","on-primary-container":"#98847e","surface-container":"#f0ede9","on-background":"#1c1c19","primary-fixed-dim":"#d8c2bb","surface":"#fcf9f4","outline":"#807471","tertiary-fixed-dim":"#e5c281","tertiary":"#0f0800","secondary-fixed":"#ffdbc7","on-surface-variant":"#4f4542","secondary":"#8e4e1e","tertiary-container":"#2d1e00","on-tertiary":"#ffffff","on-tertiary-fixed-variant":"#5b430e","inverse-surface":"#31302d","surface-tint":"#6c5b55","outline-variant":"#d2c3bf","error-container":"#ffdad6","background":"#fcf9f4","inverse-primary":"#d8c2bb","primary-container":"#2b1e1a","primary":"#120805","primary-fixed":"#f5ddd7","on-surface":"#1c1c19","surface-container-highest":"#e5e2dd","on-error":"#ffffff","on-tertiary-fixed":"#261900","on-primary-fixed-variant":"#53433e","on-primary":"#ffffff","on-tertiary-container":"#a28449","on-secondary-fixed-variant":"#713707","surface-container-lowest":"#ffffff","secondary-container":"#fca871","surface-dim":"#dcdad5"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"space-lg":"2rem","space-sm":"0.5rem","margin-mobile":"1.25rem","gutter":"1.5rem","margin":"4rem","space-md":"1rem","gutter-mobile":"1rem","space-xl":"3.5rem","space-xs":"0.25rem"},fontFamily:{"body-md":["Hanken Grotesk"],"label-uppercase":["Hanken Grotesk"],"headline-lg-mobile":["EB Garamond"],"body-sm":["Hanken Grotesk"],"caption":["Hanken Grotesk"],"display-hero":["EB Garamond"],"display-hero-mobile":["EB Garamond"],"headline-sm":["EB Garamond"],"body-lg":["Hanken Grotesk"],"headline-lg":["EB Garamond"],"title-editorial":["EB Garamond"],"headline-md":["EB Garamond"]},fontSize:{"body-md":["15px",{"lineHeight":"24px","letterSpacing":"0.01em","fontWeight":"400"}],"label-uppercase":["11px",{"lineHeight":"16px","letterSpacing":"0.15em","fontWeight":"600"}],"headline-lg-mobile":["30px",{"lineHeight":"36px","letterSpacing":"0em","fontWeight":"400"}],"body-sm":["13px",{"lineHeight":"20px","letterSpacing":"0.02em","fontWeight":"400"}],"caption":["12px",{"lineHeight":"18px","letterSpacing":"0.02em","fontWeight":"400"}],"display-hero":["64px",{"lineHeight":"72px","letterSpacing":"-0.02em","fontWeight":"400"}],"display-hero-mobile":["38px",{"lineHeight":"44px","letterSpacing":"-0.01em","fontWeight":"400"}],"headline-sm":["24px",{"lineHeight":"32px","letterSpacing":"0em","fontWeight":"500"}],"body-lg":["18px",{"lineHeight":"30px","letterSpacing":"0.01em","fontWeight":"300"}],"headline-lg":["44px",{"lineHeight":"52px","letterSpacing":"-0.015em","fontWeight":"400"}],"title-editorial":["20px",{"lineHeight":"28px","letterSpacing":"0.02em","fontWeight":"400"}],"headline-md":["32px",{"lineHeight":"40px","letterSpacing":"-0.01em","fontWeight":"400"}]}}}};</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 w-full z-50 bg-surface/90 backdrop-blur-md shadow-[0_1px_8px_rgba(43,30,26,0.06)]"><div class="h-20 max-w-[1440px] mx-auto px-margin-mobile lg:px-margin flex items-center justify-between"><div class="flex items-center gap-space-md"><img alt="Emmalex Brand Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WrTJwoKlM0ai8sMRq3_MB8UPWqIKXIs82BDdbp9evJuTGefEbJNALwBRXrLhb6skkSxa763sgFEL3yDzVhlcTUdlHvyAwxXRZUvOTCdhwd66xgO5JsU21uEGDTvliGlFK6tiqIVaJaXtVLzxLqjXHgrcqZZzvBPfEn-MlOhZVY5JOQEucKnOak1sdDI53QPvXuxHyDQmrlvr20fqsWYeef281fbqWVwBnSAiwvfi7AhH13lA0LGNPeuuA"/><a class="font-title-editorial text-title-editorial tracking-wider text-primary uppercase" data-path="home" href="#">Emmalex</a><span class="hidden xl:inline-block font-label-uppercase text-label-uppercase text-on-surface-variant/70 uppercase pl-space-xs tracking-widest">Firenze • Milano</span></div><nav class="hidden lg:flex items-center gap-space-lg" data-active-classes="text-primary font-bold"><a class="font-label-uppercase text-label-uppercase uppercase text-on-surface-variant hover:text-primary transition-colors" data-path="collections" href="#">Collections</a><a class="font-label-uppercase text-label-uppercase uppercase text-on-surface-variant hover:text-primary transition-colors" data-path="oxfords-and-derbies" href="#">Oxfords &amp; Derbies</a><a class="font-label-uppercase text-label-uppercase uppercase text-on-surface-variant hover:text-primary transition-colors" data-path="loafers" href="#">Loafers</a><a class="font-label-uppercase text-label-uppercase uppercase text-on-surface-variant hover:text-primary transition-colors" data-path="boots" href="#">Boots</a><a class="font-label-uppercase text-label-uppercase uppercase text-on-surface-variant hover:text-primary transition-colors" data-path="bespoke-atelier" href="#">Bespoke Atelier</a><a class="font-label-uppercase text-label-uppercase uppercase text-on-surface-variant hover:text-primary transition-colors" data-path="heritage" href="#">Heritage</a></nav><div class="flex items-center gap-space-md"><div class="hidden sm:flex items-center gap-space-xs font-label-uppercase text-label-uppercase text-on-surface-variant uppercase cursor-pointer hover:text-primary transition-colors"><span class="material-symbols-outlined text-[16px]">public</span><span>EUR / €</span></div><button aria-label="Search Archive" class="p-space-xs text-on-surface-variant hover:text-primary transition-colors flex items-center justify-center" type="button"><span class="material-symbols-outlined text-[20px]">search</span></button><button aria-label="Saved Items" class="p-space-xs text-on-surface-variant hover:text-primary transition-colors relative flex items-center justify-center" type="button"><span class="material-symbols-outlined text-[20px]">favorite</span><span class="absolute -top-1 -right-1 w-4 h-4 bg-secondary text-on-secondary rounded-full font-label-uppercase text-[9px] leading-none flex items-center justify-center">0</span></button><button aria-label="Bespoke Cart Drawer" class="p-space-xs text-on-surface-variant hover:text-primary transition-colors relative flex items-center justify-center" type="button"><span class="material-symbols-outlined text-[20px]">shopping_bag</span><span class="absolute -top-1 -right-1 w-4 h-4 bg-primary text-on-primary rounded-full font-label-uppercase text-[9px] leading-none flex items-center justify-center">2</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ml-space-xs"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-background min-h-screen"><div class="flex flex-col w-full">
+<!-- HERO SECTION -->
+<section class="relative w-full min-h-[92vh] flex items-center justify-center -mt-20 overflow-hidden bg-primary">
+<!-- Atmospheric Visual with Scrim -->
+<div class="absolute inset-0 z-0">
+<img alt="Italian master shoemaker cordwainer hand burnishing Goodyear welted leather shoes at workbench" class="w-full h-full object-cover object-center scale-105 transition-transform duration-[10000ms] ease-out hover:scale-100 opacity-55" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAb6HFqrqsOl3023XwraJSXedCfkOJ7qltqFA_3mCfdbTpd4tefzLiUC2-2eckyfvaGWNiKG2xFmxo1h0dMmYgX6dOEd9tSeTHOuGPZ6jy81dkWRsqMaEnqvUC-DoMognYakatfLXwOo7L_6I-kUjiAc5ZXvLo5piZAif2TJwQe35JTrR9JwDTss2PmueSHt1Z8YOPnz4Df6zJY2e3GgiIydKeH2_CsK7lOIE41thjO413Ayz7VyN0V"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary via-primary/60 to-primary/40"></div>
+<div class="absolute inset-0 bg-radial from-transparent via-primary/30 to-primary/80"></div>
+</div>
+<!-- Hero Content -->
+<div class="relative z-10 max-w-[1440px] w-full mx-auto px-margin-mobile lg:px-margin pt-32 pb-20 flex flex-col items-center text-center">
+<div class="inline-flex items-center gap-space-xs px-space-md py-1.5 bg-surface/10 backdrop-blur-md rounded-full mb-space-md">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-container"></span>
+<span class="font-label-uppercase text-label-uppercase text-primary-fixed tracking-[0.25em] uppercase">Firenze Dal 1928 • Master Cordwainers</span>
+</div>
+<h1 class="font-display-hero text-display-hero-mobile lg:text-display-hero text-surface max-w-5xl tracking-tight leading-[1.08] mb-space-md">
+        Perfection In Every Stitch. <br class="hidden sm:inline"/>
+<span class="italic font-light text-primary-fixed-dim">Handcrafted For Generations.</span>
+</h1>
+<p class="font-body-lg text-body-lg text-surface-container-high max-w-2xl mx-auto font-light leading-relaxed mb-space-xl">
+        Master Italian artisans sculpt the finest full-grain calfskin and Tuscan vegetable-tanned leathers into enduring sartorial icons through 180 meticulous bespoke steps.
+      </p>
+<!-- CTAs -->
+<div class="flex flex-col sm:flex-row items-center justify-center gap-space-md w-full max-w-md mx-auto mb-space-xl">
+<a class="w-full sm:w-auto px-8 py-4 bg-primary-fixed text-on-primary-fixed font-label-uppercase text-label-uppercase tracking-[0.2em] uppercase hover:bg-secondary-container hover:text-on-secondary-fixed transition-all duration-300 text-center shadow-lg" href="#masterpieces">
+          Explore The Autumn Collection
+        </a>
+<a class="w-full sm:w-auto px-8 py-4 bg-transparent text-surface border border-outline-variant/40 hover:border-surface font-label-uppercase text-label-uppercase tracking-[0.2em] uppercase hover:bg-surface/10 transition-all duration-300 text-center backdrop-blur-sm" href="#bespoke-experience">
+          Book Bespoke Consultation
+        </a>
+</div>
+<!-- Trust Pillars -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-lg pt-space-lg w-full max-w-4xl border-t border-outline-variant/20">
+<div class="flex items-center justify-center gap-space-xs text-surface-container-high">
+<span class="material-symbols-outlined text-secondary-container text-xl">verified</span>
+<span class="font-label-uppercase text-label-uppercase tracking-wider uppercase">100% Goodyear Welted</span>
+</div>
+<div class="flex items-center justify-center gap-space-xs text-surface-container-high">
+<span class="material-symbols-outlined text-secondary-container text-xl">workspace_premium</span>
+<span class="font-label-uppercase text-label-uppercase tracking-wider uppercase">Full-Grain Italian Calfskin</span>
+</div>
+<div class="flex items-center justify-center gap-space-xs text-surface-container-high">
+<span class="material-symbols-outlined text-secondary-container text-xl">auto_fix</span>
+<span class="font-label-uppercase text-label-uppercase tracking-wider uppercase">Hand-Burnished Patina</span>
+</div>
+</div>
+</div>
+</section>
+<!-- EDITORIAL TICKER BAR -->
+<aside aria-label="Atelier Highlights" class="w-full bg-surface-container-highest py-3 overflow-hidden">
+<div class="flex items-center justify-around gap-space-xl text-on-surface-variant font-label-uppercase text-[10px] tracking-[0.25em] uppercase whitespace-nowrap overflow-x-auto px-space-md">
+<span>Complimentary White-Glove Global Delivery</span>
+<span class="w-1 h-1 rounded-full bg-secondary"></span>
+<span>Hand-Turned Wooden Shoe Trees Included</span>
+<span class="w-1 h-1 rounded-full bg-secondary"></span>
+<span>Numbered Limited Workshop Production</span>
+<span class="w-1 h-1 rounded-full bg-secondary"></span>
+<span>Complimentary Lifetime Resoling Warranty</span>
+</div>
+</aside>
+<!-- MASTERPIECE CURATION (PRODUCT SHOWCASE) -->
+<section class="w-full py-24 bg-background" id="masterpieces">
+<div class="max-w-[1440px] mx-auto px-margin-mobile lg:px-margin">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6 pb-6 border-b border-surface-container-high">
+<div>
+<span class="font-label-uppercase text-label-uppercase text-secondary uppercase tracking-[0.25em]">Autumn / Winter Bespoke Archive</span>
+<h2 class="font-headline-lg text-headline-lg text-primary mt-2">The Masterpiece Series</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+          Individually finished in our Firenze atelier. Each pair undergoes up to 72 hours of proprietary oil glazing and architectural lasting.
+        </p>
+</div>
+<!-- 5-Product Editorial Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16">
+<!-- CARD 1: Medallion Noir Bit Loafer (Featured Large) -->
+<article class="group flex flex-col bg-surface-container-lowest p-5 rounded-none shadow-sm hover:shadow-xl transition-all duration-500">
+<div class="relative w-full aspect-[4/5] bg-surface-container-high overflow-hidden mb-6 flex items-center justify-center">
+<span class="absolute top-4 left-4 z-10 px-3 py-1 bg-primary text-on-primary font-label-uppercase text-[10px] tracking-widest uppercase">
+              Bestseller
+            </span>
+<button aria-label="Save to Wishlist" class="absolute top-4 right-4 z-10 w-9 h-9 bg-surface/80 hover:bg-surface backdrop-blur-md rounded-full flex items-center justify-center text-primary transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+<img alt="The Medallion Noir Bit Loafer with ornate gold crest medallion" class="w-full h-full object-contain p-6 transition-transform duration-700 ease-out group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUMvufvrI4JQH5Jd8WxSWYBPzsE7WKYNBBPPRkaadTEdH4OE0ftQ08rLESMMmdaegFJOTO4rLXXrCjoiDaN7ht1dzOzc2-7wCe2qJIzHBUuRC1oP6Rh9icNCD-mbcVy7IwA-I5pu6Z7QDXYdi3K977Nl_XaoIiJx4ZVIoX-XLJbo34uE8lT5jiw2KHAU94Eg2VM-H0_El5RmfTA1cyucpoTYfDZYVmz0Qxzxjk40PMM8Fm1rzM-hX8OwIkFowiIhZRlg"/>
+<div class="absolute inset-x-0 bottom-0 p-4 bg-gradient-to-t from-primary/90 via-primary/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-between">
+<span class="text-surface font-label-uppercase text-[10px] uppercase tracking-wider">Blake Rapid Construction</span>
+<span class="text-secondary-fixed text-xs font-semibold uppercase">Quick View</span>
+</div>
+</div>
+<div class="flex flex-col flex-grow justify-between">
+<div>
+<div class="flex items-center justify-between gap-2 mb-2">
+<span class="font-label-uppercase text-[10px] tracking-widest uppercase text-secondary font-bold">Box Calfskin • Gold Crest</span>
+<div class="flex items-center gap-1 text-secondary-container">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-caption text-caption text-primary font-medium">4.9 (128)</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-1 group-hover:text-secondary transition-colors">The Medallion Noir Bit Loafer</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mb-4">
+                Hand-polished jet black calfskin paired with an archival sculpted golden crest buckle, micro-embossed flanks, and hand-stained channeled outsole.
+              </p>
+</div>
+<div class="pt-4 border-t border-surface-container">
+<!-- Size Selector Pills -->
+<div class="flex items-center gap-1.5 mb-4 overflow-x-auto pb-1 text-on-surface">
+<span class="text-[10px] font-label-uppercase text-on-surface-variant uppercase pr-1">Sizes:</span>
+<button class="w-8 h-7 text-xs font-label-uppercase bg-surface-container hover:bg-primary hover:text-on-primary transition-colors">8</button>
+<button class="w-8 h-7 text-xs font-label-uppercase bg-surface-container hover:bg-primary hover:text-on-primary transition-colors">9</button>
+<button class="w-8 h-7 text-xs font-label-uppercase bg-primary text-on-primary">10</button>
+<button class="w-8 h-7 text-xs font-label-uppercase bg-surface-container hover:bg-primary hover:text-on-primary transition-colors">11</button>
+<button class="w-8 h-7 text-xs font-label-uppercase bg-surface-container hover:bg-primary hover:text-on-primary transition-colors">12</button>
+</div>
+<div class="flex items-center justify-between">
+<div>
+<span class="font-label-uppercase text-[10px] text-on-surface-variant uppercase block">Made to Order</span>
+<span class="font-headline-sm text-headline-sm text-primary">$680</span>
+</div>
+<button class="px-5 py-2.5 bg-primary hover:bg-secondary text-on-primary font-label-uppercase text-label-uppercase uppercase tracking-wider transition-colors flex items-center gap-2" type="button">
+<span class="material-symbols-outlined text-[16px]">shopping_bag</span>
+<span>Acquire</span>
+</button>
+</div>
+</div>
+</div>
+</article>
+<!-- CARD 2: Savoy Grain Horsebit Loafer -->
+<article class="group flex flex-col bg-surface-container-lowest p-5 rounded-none shadow-sm hover:shadow-xl transition-all duration-500">
+<div class="relative w-full aspect-[4/5] bg-surface-container-high overflow-hidden mb-6 flex items-center justify-center">
+<span class="absolute top-4 left-4 z-10 px-3 py-1 bg-secondary text-on-secondary font-label-uppercase text-[10px] tracking-widest uppercase">
+              Heritage Icon
+            </span>
+<button aria-label="Save to Wishlist" class="absolute top-4 right-4 z-10 w-9 h-9 bg-surface/80 hover:bg-surface backdrop-blur-md rounded-full flex items-center justify-center text-primary transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+<img alt="The Savoy Grain Horsebit Loafer in pebbled leather with cedar shoe trees" class="w-full h-full object-contain p-6 transition-transform duration-700 ease-out group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVtSbyFq_o2P8ueEmg8fIxp5kpvjOuQlU7N939JJkvhxfmMuxKDVhsGUo6zHF_LZ3Dm9L0n3BO6NE2xR2hG6gKY7dcho2FXiWFK6hrmfhcvaICT4gqHJ2jimKvG0JTNR9vYT7V6xaxmVQoiDQnFuxdH6CiGuAcWUfn2P9RZpp9U3KQnz2YHV2GQE9rHdmQNbNii0jjXALcJiCuF_3umQG6MJ-g9ylL73GjZyXsYMrJ1WLmpIb_CQBek9JY5kHMgRZqMA"/>
+<div class="absolute inset-x-0 bottom-0 p-4 bg-gradient-to-t from-primary/90 via-primary/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-between">
+<span class="text-surface font-label-uppercase text-[10px] uppercase tracking-wider">Includes Cedar Trees</span>
+<span class="text-secondary-fixed text-xs font-semibold uppercase">Quick View</span>
+</div>
+</div>
+<div class="flex flex-col flex-grow justify-between">
+<div>
+<div class="flex items-center justify-between gap-2 mb-2">
+<span class="font-label-uppercase text-[10px] tracking-widest uppercase text-secondary font-bold">Pebble-Grain • Cast Brass</span>
+<div class="flex items-center gap-1 text-secondary-container">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-caption text-caption text-primary font-medium">5.0 (94)</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-1 group-hover:text-secondary transition-colors">The Savoy Grain Horsebit Loafer</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mb-4">
+                Rich chestnut pebble-grain leather resting on a sculpted platform welt, adorned with polished signature golden H-link bridge hardware.
+              </p>
+</div>
+<div class="pt-4 border-t border-surface-container">
+<div class="flex items-center gap-1.5 mb-4 overflow-x-auto pb-1 text-on-surface">
+<span class="text-[10px] font-label-uppercase text-on-surface-variant uppercase pr-1">Sizes:</span>
+<button class="w-8 h-7 text-xs font-label-uppercase bg-surface-container hover:bg-primary hover:text-on-primary transition-colors">8.5</button>
+<button class="w-8 h-7 text-xs font-label-uppercase bg-surface-container hover:bg-primary hover:text-on-primary transition-colors">9.5</button>
+<button class="w-8 h-7 text-xs font-label-uppercase bg-primary text-on-primary">10.5</button>
+<button class="w-8 h-7 text-xs font-label-uppercase bg-surface-container hover:bg-primary hover:text-on-primary transition-colors">11.5</button>
+<button class="w-8 h-7 text-xs font-label-uppercase bg-surface-container hover:bg-primary hover:text-on-primary transition-colors">12</button>
+</div>
+<div class="flex items-center justify-between">
+<div>
+<span class="font-label-uppercase text-[10px] text-on-surface-variant uppercase block">In Stock Firenze</span>
+<span class="font-headline-sm text-headline-sm text-primary">$720</span>
+</div>
+<button class="px-5 py-2.5 bg-primary hover:bg-secondary text-on-primary font-label-uppercase text-label-uppercase uppercase tracking-wider transition-colors flex items-center gap-2" type="button">
+<span class="material-symbols-outlined text-[16px]">shopping_bag</span>
+<span>Acquire</span>
+</button>
+</div>
+</div>
+</div>
+</article>
+<!-- CARD 3: Monogram Embossed Lug Loafer -->
+<article class="group flex flex-col bg-surface-container-lowest p-5 rounded-none shadow-sm hover:shadow-xl transition-all duration-500">
+<div class="relative w-full aspect-[4/5] bg-surface-container-high overflow-hidden mb-6 flex items-center justify-center">
+<span class="absolute top-4 left-4 z-10 px-3 py-1 bg-surface-container-highest text-primary font-label-uppercase text-[10px] tracking-widest uppercase">
+              New Arrival
+            </span>
+<button aria-label="Save to Wishlist" class="absolute top-4 right-4 z-10 w-9 h-9 bg-surface/80 hover:bg-surface backdrop-blur-md rounded-full flex items-center justify-center text-primary transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+<img alt="The Monogram Embossed Lug Loafer on commando tread" class="w-full h-full object-contain p-6 transition-transform duration-700 ease-out group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpU3czVBUzMivdCSZVwSublpVBqRk40_Z5E-1fQhL8hHzVLaMQ2XSuPx2kzPYPPXbwziiVzfxar92Lm-Sbxd5gmyFg0_PGe7ZbxB-Hi0clLJBKMBpFvHK3t4mFBbY2S4WGUP9_0llFVSELUSM1a2Thln7qUnjnn-0f6Ot_508eRwvO6lSM_b4UKRyBo8HnAwFigk7zL0RAa8Ngkk_sgORO2fHQ5IiB2A3yhtLfBSdXxdAYPRGZX3CM9G2O0umzDzVjmA"/>
+<div class="absolute inset-x-0 bottom-0 p-4 bg-gradient-to-t from-primary/90 via-primary/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-between">
+<span class="text-surface font-label-uppercase text-[10px] uppercase tracking-wider">Commando Lug Welt</span>
+<span class="text-secondary-fixed text-xs font-semibold uppercase">Quick View</span>
+</div>
+</div>
+<div class="flex flex-col flex-grow justify-between">
+<div>
+<div class="flex items-center justify-between gap-2 mb-2">
+<span class="font-label-uppercase text-[10px] tracking-widest uppercase text-secondary font-bold">Textured Vamp • Commando Sole</span>
+<div class="flex items-center gap-1 text-secondary-container">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-caption text-caption text-primary font-medium">4.8 (82)</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-1 group-hover:text-secondary transition-colors">The Monogram Lug Loafer</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mb-4">
+                Deep obsidian calfskin crowned with tactile damier monogram brocade vamp, equestrian bit, and an architectural storm-welted lug tread.
+              </p>
+</div>
+<div class="pt-4 border-t border-surface-container">
+<div class="flex items-center gap-1.5 mb-4 overflow-x-auto pb-1 text-on-surface">
+<span class="text-[10px] font-label-uppercase text-on-surface-variant uppercase pr-1">Sizes:</span>
+<button class="w-8 h-7 text-xs font-label-uppercase bg-surface-container hover:bg-primary hover:text-on-primary transition-colors">8</button>
+<button class="w-8 h-7 text-xs font-label-uppercase bg-surface-container hover:bg-primary hover:text-on-primary transition-colors">9</button>
+<button class="w-8 h-7 text-xs font-label-uppercase bg-surface-container hover:bg-primary hover:text-on-primary transition-colors">10</button>
+<button class="w-8 h-7 text-xs font-label-uppercase bg-primary text-on-primary">11</button>
+<button class="w-8 h-7 text-xs font-label-uppercase bg-surface-container hover:bg-primary hover:text-on-primary transition-colors">12</button>
+</div>
+<div class="flex items-center justify-between">
+<div>
+<span class="font-label-uppercase text-[10px] text-on-surface-variant uppercase block">Atelier Run of 100</span>
+<span class="font-headline-sm text-headline-sm text-primary">$750</span>
+</div>
+<button class="px-5 py-2.5 bg-primary hover:bg-secondary text-on-primary font-label-uppercase text-label-uppercase uppercase tracking-wider transition-colors flex items-center gap-2" type="button">
+<span class="material-symbols-outlined text-[16px]">shopping_bag</span>
+<span>Acquire</span>
+</button>
+</div>
+</div>
+</div>
+</article>
+<!-- CARD 4: Riviera Spectator Tassel Loafer -->
+<article class="group flex flex-col bg-surface-container-lowest p-5 rounded-none shadow-sm hover:shadow-xl transition-all duration-500">
+<div class="relative w-full aspect-[4/5] bg-surface-container-high overflow-hidden mb-6 flex items-center justify-center">
+<span class="absolute top-4 left-4 z-10 px-3 py-1 bg-secondary-fixed text-on-secondary-fixed font-label-uppercase text-[10px] tracking-widest uppercase">
+              Limited Run
+            </span>
+<button aria-label="Save to Wishlist" class="absolute top-4 right-4 z-10 w-9 h-9 bg-surface/80 hover:bg-surface backdrop-blur-md rounded-full flex items-center justify-center text-primary transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+<img alt="The Riviera Spectator Tassel Loafer in monochrome black and white" class="w-full h-full object-contain p-6 transition-transform duration-700 ease-out group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvwl_UweqD9EjR_1WvqdO1lFlmzSnLMcy0QDJbeKaVEjGPVJHR9_kYB55PliTP4W-XJGf7zcj0RcIzV2heAJOaDxnegQIO_IYT1zWw7tBNj3c-c7lPhF9xxPkuIIIHRSAC6A_TlJtONipU8sZ1G8SbxeZbcD2mMsP3defoN8pAJ9Au-zAGR-cO3ho3TOJ6i9g0PQhsI9Uar7oVNTVuHPI165e5BfHQ0x-OyMF-vsu5Hhcbl_EVawhV2Jzqj-Qphd-d3A"/>
+<div class="absolute inset-x-0 bottom-0 p-4 bg-gradient-to-t from-primary/90 via-primary/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-between">
+<span class="text-surface font-label-uppercase text-[10px] uppercase tracking-wider">Hand-Braided Tassels</span>
+<span class="text-secondary-fixed text-xs font-semibold uppercase">Quick View</span>
+</div>
+</div>
+<div class="flex flex-col flex-grow justify-between">
+<div>
+<div class="flex items-center justify-between gap-2 mb-2">
+<span class="font-label-uppercase text-[10px] tracking-widest uppercase text-secondary font-bold">Bi-Color Glacé • Spectator</span>
+<div class="flex items-center gap-1 text-secondary-container">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-caption text-caption text-primary font-medium">4.9 (67)</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-1 group-hover:text-secondary transition-colors">The Riviera Spectator Tassel Loafer</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mb-4">
+                Graphic contrast in porcelain white and midnight French calfskin, completed with artisanal fringed saddles, dual tassels, and leather welt.
+              </p>
+</div>
+<div class="pt-4 border-t border-surface-container">
+<div class="flex items-center gap-1.5 mb-4 overflow-x-auto pb-1 text-on-surface">
+<span class="text-[10px] font-label-uppercase text-on-surface-variant uppercase pr-1">Sizes:</span>
+<button class="w-8 h-7 text-xs font-label-uppercase bg-surface-container hover:bg-primary hover:text-on-primary transition-colors">7.5</button>
+<button class="w-8 h-7 text-xs font-label-uppercase bg-primary text-on-primary">8.5</button>
+<button class="w-8 h-7 text-xs font-label-uppercase bg-surface-container hover:bg-primary hover:text-on-primary transition-colors">9.5</button>
+<button class="w-8 h-7 text-xs font-label-uppercase bg-surface-container hover:bg-primary hover:text-on-primary transition-colors">10.5</button>
+</div>
+<div class="flex items-center justify-between">
+<div>
+<span class="font-label-uppercase text-[10px] text-on-surface-variant uppercase block">Archive Piece</span>
+<span class="font-headline-sm text-headline-sm text-primary">$640</span>
+</div>
+<button class="px-5 py-2.5 bg-primary hover:bg-secondary text-on-primary font-label-uppercase text-label-uppercase uppercase tracking-wider transition-colors flex items-center gap-2" type="button">
+<span class="material-symbols-outlined text-[16px]">shopping_bag</span>
+<span>Acquire</span>
+</button>
+</div>
+</div>
+</div>
+</article>
+<!-- CARD 5: Sovereign Ochre Derby -->
+<article class="group flex flex-col bg-surface-container-lowest p-5 rounded-none shadow-sm hover:shadow-xl transition-all duration-500 md:col-span-2 lg:col-span-1">
+<div class="relative w-full aspect-[4/5] bg-surface-container-high overflow-hidden mb-6 flex items-center justify-center">
+<span class="absolute top-4 left-4 z-10 px-3 py-1 bg-tertiary text-on-tertiary font-label-uppercase text-[10px] tracking-widest uppercase">
+              Modern Statement
+            </span>
+<button aria-label="Save to Wishlist" class="absolute top-4 right-4 z-10 w-9 h-9 bg-surface/80 hover:bg-surface backdrop-blur-md rounded-full flex items-center justify-center text-primary transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+<img alt="The Sovereign Ochre Derby on heavy architectural cleated sole" class="w-full h-full object-contain p-6 transition-transform duration-700 ease-out group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5duct6CeCixNVQHj4TWOutQk_VIdyAzcNoja8AgH4UpT5SZw9SoCMYXFwbFT9OTBIlwTaEet9wSVTGpC0zb5OZzoBdfGO4IlQmVZ9fGhXzInV26GsXHRYWHpIS0yVN25yk2yvbD7iZ8FxKMq1HuOCTbHpzMfkXrOm2sXJNLBeAlbzY3xEGfDwerN4S8Z_Y9z0eCgpSHb8KIJyL3Vc8lwfiDbd-X9y1UA_WxdJdELINqZz8CoKq9XIiumGU5mYIxQYPA"/>
+<div class="absolute inset-x-0 bottom-0 p-4 bg-gradient-to-t from-primary/90 via-primary/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-between">
+<span class="text-surface font-label-uppercase text-[10px] uppercase tracking-wider">Vibram Extralight Platform</span>
+<span class="text-secondary-fixed text-xs font-semibold uppercase">Quick View</span>
+</div>
+</div>
+<div class="flex flex-col flex-grow justify-between">
+<div>
+<div class="flex items-center justify-between gap-2 mb-2">
+<span class="font-label-uppercase text-[10px] tracking-widest uppercase text-secondary font-bold">Ochre Nubuck • Sculpted Cleat</span>
+<div class="flex items-center gap-1 text-secondary-container">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-caption text-caption text-primary font-medium">4.8 (53)</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-1 group-hover:text-secondary transition-colors">The Sovereign Ochre Derby</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mb-4">
+                Bold mustard-ochre Tuscan nubuck leather anchored by an exaggerated architectural tread sole with contrasting saddle stitching.
+              </p>
+</div>
+<div class="pt-4 border-t border-surface-container">
+<div class="flex items-center gap-1.5 mb-4 overflow-x-auto pb-1 text-on-surface">
+<span class="text-[10px] font-label-uppercase text-on-surface-variant uppercase pr-1">Sizes:</span>
+<button class="w-8 h-7 text-xs font-label-uppercase bg-surface-container hover:bg-primary hover:text-on-primary transition-colors">9</button>
+<button class="w-8 h-7 text-xs font-label-uppercase bg-primary text-on-primary">10</button>
+<button class="w-8 h-7 text-xs font-label-uppercase bg-surface-container hover:bg-primary hover:text-on-primary transition-colors">11</button>
+<button class="w-8 h-7 text-xs font-label-uppercase bg-surface-container hover:bg-primary hover:text-on-primary transition-colors">12</button>
+</div>
+<div class="flex items-center justify-between">
+<div>
+<span class="font-label-uppercase text-[10px] text-on-surface-variant uppercase block">Contemporary Guild</span>
+<span class="font-headline-sm text-headline-sm text-primary">$590</span>
+</div>
+<button class="px-5 py-2.5 bg-primary hover:bg-secondary text-on-primary font-label-uppercase text-label-uppercase uppercase tracking-wider transition-colors flex items-center gap-2" type="button">
+<span class="material-symbols-outlined text-[16px]">shopping_bag</span>
+<span>Acquire</span>
+</button>
+</div>
+</div>
+</div>
+</article>
+<!-- Bespoke Commission Box (Card 6) -->
+<article class="flex flex-col justify-between bg-primary p-8 text-surface relative overflow-hidden">
+<div class="relative z-10">
+<span class="font-label-uppercase text-label-uppercase text-secondary-container tracking-widest uppercase block mb-3">Su Misura Atelier</span>
+<h3 class="font-headline-md text-headline-md text-surface mb-4">Custom Commission &amp; Last Monogramming</h3>
+<p class="font-body-md text-body-md text-surface-container-high mb-6">
+              Have your personal wooden last crafted to the precise contours of your foot, finished in rare crust leathers with hand-engraved brass initials.
+            </p>
+<ul class="space-y-3 font-body-sm text-body-sm text-surface-container-high mb-8">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-container text-base">check_circle</span>
+<span>Custom leather patina formulation</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-container text-base">check_circle</span>
+<span>Personalized sole engraving &amp; brass toe-plates</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-container text-base">check_circle</span>
+<span>Private fitting sessions in Florence or Milan</span>
+</li>
+</ul>
+</div>
+<div class="relative z-10 pt-4 border-t border-outline-variant/20 flex flex-col sm:flex-row items-center justify-between gap-4">
+<div>
+<span class="font-label-uppercase text-[10px] text-surface-container uppercase block">Starting from</span>
+<span class="font-headline-sm text-headline-sm text-surface">$1,450</span>
+</div>
+<a class="w-full sm:w-auto px-6 py-3 bg-secondary hover:bg-secondary-container hover:text-on-secondary-fixed text-on-secondary font-label-uppercase text-label-uppercase tracking-widest uppercase transition-colors text-center" href="#bespoke-experience">
+              Request Guild Last
+            </a>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- SPLIT SCREEN ATELIER CRAFTSMANSHIP STORY -->
+<section class="w-full bg-surface-container-low py-28 overflow-hidden">
+<div class="max-w-[1440px] mx-auto px-margin-mobile lg:px-margin">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+<!-- Left: Image Composition with Craft Legacy -->
+<div class="lg:col-span-6 relative">
+<div class="relative z-10 aspect-[5/4] sm:aspect-[4/3] bg-surface-container shadow-2xl overflow-hidden">
+<img alt="Master craftsman in leather apron shaving sole leather edge with artisan bone burnisher" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAb6HFqrqsOl3023XwraJSXedCfkOJ7qltqFA_3mCfdbTpd4tefzLiUC2-2eckyfvaGWNiKG2xFmxo1h0dMmYgX6dOEd9tSeTHOuGPZ6jy81dkWRsqMaEnqvUC-DoMognYakatfLXwOo7L_6I-kUjiAc5ZXvLo5piZAif2TJwQe35JTrR9JwDTss2PmueSHt1Z8YOPnz4Df6zJY2e3GgiIydKeH2_CsK7lOIE41thjO413Ayz7VyN0V"/>
+</div>
+<!-- Overlaid floating detail card -->
+<div class="absolute -bottom-8 -right-4 sm:-right-8 z-20 bg-surface-container-lowest p-6 shadow-xl max-w-xs border-l-4 border-secondary hidden sm:block">
+<span class="font-headline-md text-headline-md text-primary block leading-none mb-1">180</span>
+<span class="font-label-uppercase text-[10px] uppercase tracking-wider text-secondary font-semibold block mb-2">Discrete Manual Operations</span>
+<p class="font-caption text-caption text-on-surface-variant">
+              From first last carving to final champagne wax burnish, every Emmalex shoe remains in hand for over three weeks.
+            </p>
+</div>
+</div>
+<!-- Right: The 4 Pillars of Florentine Excellence -->
+<div class="lg:col-span-6 flex flex-col justify-center">
+<span class="font-label-uppercase text-label-uppercase text-secondary tracking-[0.25em] uppercase mb-2">The Florentine Heritage</span>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-6">
+            Where Century-Old Geometry Meets Living Leather
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-10 leading-relaxed">
+            Founded along the banks of the Arno in 1928, the Emmalex atelier remains family-governed. We reject modern composite fillers, utilizing only hand-hammered cork footbeds and French hides seasoned in natural oak tannins.
+          </p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+<div class="flex flex-col">
+<div class="w-10 h-10 bg-primary text-on-primary flex items-center justify-center mb-3">
+<span class="font-title-editorial text-title-editorial">01</span>
+</div>
+<h4 class="font-title-editorial text-title-editorial text-primary mb-1">French Tannery Provenance</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Select Grade-1 full-grain skins from Le Puy-en-Velay, vegetable-conditioned for unmatched suppleness and grain clarity.
+              </p>
+</div>
+<div class="flex flex-col">
+<div class="w-10 h-10 bg-primary text-on-primary flex items-center justify-center mb-3">
+<span class="font-title-editorial text-title-editorial">02</span>
+</div>
+<h4 class="font-title-editorial text-title-editorial text-primary mb-1">72-Hour Hand Patina</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Applied layer-by-layer using natural pigments, essential oils, and carnauba wax to render deep, multidimensional light refraction.
+              </p>
+</div>
+<div class="flex flex-col">
+<div class="w-10 h-10 bg-primary text-on-primary flex items-center justify-center mb-3">
+<span class="font-title-editorial text-title-editorial">03</span>
+</div>
+<h4 class="font-title-editorial text-title-editorial text-primary mb-1">Goodyear &amp; Blake Rapid</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Sewn with waxed Irish linen thread. Re-craftable indefinitely, molding uniquely to the owner’s gait over decades.
+              </p>
+</div>
+<div class="flex flex-col">
+<div class="w-10 h-10 bg-primary text-on-primary flex items-center justify-center mb-3">
+<span class="font-title-editorial text-title-editorial">04</span>
+</div>
+<h4 class="font-title-editorial text-title-editorial text-primary mb-1">Lifetime Restoration</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Return your footwear to our Florence bench at any year. We strip, re-welt, nourish the leather, and return them pristine.
+              </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- INTERACTIVE BESPOKE FIT CONSULTATION & LEATHER SELECTOR -->
+<section class="w-full py-24 bg-surface-container" id="bespoke-experience">
+<div class="max-w-[1440px] mx-auto px-margin-mobile lg:px-margin">
+<div class="bg-surface-container-lowest p-8 lg:p-16 shadow-lg">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+<!-- Column 1: Configurator Intro -->
+<div class="lg:col-span-5 flex flex-col justify-between">
+<div>
+<span class="font-label-uppercase text-label-uppercase text-secondary uppercase tracking-[0.25em] mb-2 block">Personal Concierge Service</span>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-4">The Emmalex Shoe Finder &amp; Last Fitting</h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-6">
+                Our bespoke concierge assists patrons globally with arch alignment, instep volume evaluation, and curated leather matching. Begin your consultation below.
+              </p>
+</div>
+<div class="p-5 bg-surface-container-low border-l-2 border-secondary">
+<div class="flex items-center gap-3 mb-2">
+<span class="material-symbols-outlined text-secondary">support_agent</span>
+<span class="font-label-uppercase text-label-uppercase text-primary uppercase">Private Stylist Available</span>
+</div>
+<p class="font-caption text-caption text-on-surface-variant">
+                Direct WhatsApp or video appointments with Maestro Cobbler Marco Valenti available Tuesday to Saturday.
+              </p>
+</div>
+</div>
+<!-- Column 2: Interactive Swatches & Selector -->
+<div class="lg:col-span-7 flex flex-col justify-between">
+<div>
+<!-- Step 1: Leather Patina Selection -->
+<div class="mb-8">
+<div class="flex items-center justify-between mb-3">
+<label class="font-label-uppercase text-label-uppercase uppercase text-primary tracking-wider">
+                    1. Select Leather Finish &amp; Tone
+                  </label>
+<span class="font-caption text-caption text-secondary font-semibold uppercase" id="active-swatch-label">
+                    Espresso Anticato • Tuscan Calf
+                  </span>
+</div>
+<div class="grid grid-cols-4 gap-3">
+<button class="swatch-btn group text-left p-3 bg-surface-container-low border-2 border-primary transition-all" onclick="selectLeather('Espresso Anticato', '#251915')" type="button">
+<div class="w-full h-10 bg-[#2b1e1a] mb-2 shadow-inner"></div>
+<span class="font-label-uppercase text-[10px] block text-primary uppercase font-bold">Espresso</span>
+<span class="font-caption text-[11px] text-on-surface-variant">Anticato Patina</span>
+</button>
+<button class="swatch-btn group text-left p-3 bg-surface-container-low border-2 border-transparent hover:border-secondary transition-all" onclick="selectLeather('Cognac Siena', '#8e4e1e')" type="button">
+<div class="w-full h-10 bg-[#8e4e1e] mb-2 shadow-inner"></div>
+<span class="font-label-uppercase text-[10px] block text-primary uppercase font-bold">Cognac</span>
+<span class="font-caption text-[11px] text-on-surface-variant">Siena Glacé</span>
+</button>
+<button class="swatch-btn group text-left p-3 bg-surface-container-low border-2 border-transparent hover:border-secondary transition-all" onclick="selectLeather('Oxblood Chianti', '#531b20')" type="button">
+<div class="w-full h-10 bg-[#531b20] mb-2 shadow-inner"></div>
+<span class="font-label-uppercase text-[10px] block text-primary uppercase font-bold">Oxblood</span>
+<span class="font-caption text-[11px] text-on-surface-variant">Chianti Wine</span>
+</button>
+<button class="swatch-btn group text-left p-3 bg-surface-container-low border-2 border-transparent hover:border-secondary transition-all" onclick="selectLeather('Noir Absolu', '#120805')" type="button">
+<div class="w-full h-10 bg-[#120805] mb-2 shadow-inner"></div>
+<span class="font-label-uppercase text-[10px] block text-primary uppercase font-bold">Noir</span>
+<span class="font-caption text-[11px] text-on-surface-variant">Deep Obsidian</span>
+</button>
+</div>
+</div>
+<!-- Step 2: Occasion & Silhouette -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+<div>
+<label class="font-label-uppercase text-label-uppercase uppercase text-primary tracking-wider block mb-2" for="silhouette-select">
+                    2. Intended Occasion
+                  </label>
+<select class="w-full bg-surface-container-low text-primary p-3 font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-secondary border-none" id="silhouette-select">
+<option>Black Tie &amp; Sartorial Evening</option>
+<option>Executive Boardroom &amp; Tailored Suit</option>
+<option>Weekend Leisure &amp; Yachting Slip-On</option>
+<option>Rugged All-Weather Commando City</option>
+</select>
+</div>
+<div>
+<label class="font-label-uppercase text-label-uppercase uppercase text-primary tracking-wider block mb-2" for="width-select">
+                    3. Foot Width Fitting
+                  </label>
+<select class="w-full bg-surface-container-low text-primary p-3 font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-secondary border-none" id="width-select">
+<option>D Fitting - Standard Classic</option>
+<option>E Fitting - Comfort Volume (Instep)</option>
+<option>EE Fitting - Generous Forefoot Width</option>
+<option>Bespoke 3D Digital Scan Booking</option>
+</select>
+</div>
+</div>
+</div>
+<!-- Action Trigger -->
+<div class="pt-6 border-t border-surface-container flex flex-col sm:flex-row items-center gap-4">
+<button class="w-full sm:w-auto px-8 py-4 bg-primary text-on-primary font-label-uppercase text-label-uppercase uppercase tracking-[0.2em] hover:bg-secondary transition-colors" type="button">
+                Connect With Master Concierge
+              </button>
+<button class="w-full sm:w-auto px-6 py-4 bg-transparent text-primary hover:text-secondary font-label-uppercase text-label-uppercase uppercase tracking-wider transition-colors flex items-center justify-center gap-2" type="button">
+<span class="material-symbols-outlined text-[18px]">calendar_month</span>
+<span>Schedule Video Fitting</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ACCLAIM & CRITICAL PRESS SECTION -->
+<section class="w-full py-24 bg-background">
+<div class="max-w-[1440px] mx-auto px-margin-mobile lg:px-margin">
+<!-- Press Quotes Grid -->
+<div class="text-center max-w-2xl mx-auto mb-16">
+<span class="font-label-uppercase text-label-uppercase text-secondary tracking-[0.25em] uppercase">Critical International Acclaim</span>
+<h2 class="font-headline-lg text-headline-lg text-primary mt-2">Endorsed By The Global Arbiters Of Sartorial Taste</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
+<div class="bg-surface-container-lowest p-8 shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-1 text-secondary-container mb-4">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-title-editorial text-title-editorial text-primary italic mb-6 leading-relaxed">
+              “Emmalex bridges the elusive chasm between old-world Tuscan cobbler discipline and striking, uninhibited contemporary confidence.”
+            </p>
+</div>
+<div class="pt-4 border-t border-surface-container">
+<span class="font-label-uppercase text-label-uppercase text-primary block uppercase font-bold">Robb Report</span>
+<span class="font-caption text-caption text-on-surface-variant">Annual Sartorial Style Honours</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-8 shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-1 text-secondary-container mb-4">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-title-editorial text-title-editorial text-primary italic mb-6 leading-relaxed">
+              “The Medallion Bit Loafer possesses that rare leather temper that molds into glove-soft contour within an hour of wear, yet never yields its architectural silhouette.”
+            </p>
+</div>
+<div class="pt-4 border-t border-surface-container">
+<span class="font-label-uppercase text-label-uppercase text-primary block uppercase font-bold">GQ Men’s Guild</span>
+<span class="font-caption text-caption text-on-surface-variant">Footwear of the Decade Award</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-8 shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-1 text-secondary-container mb-4">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-title-editorial text-title-editorial text-primary italic mb-6 leading-relaxed">
+              “Purchased three pairs over five years. The resoling program returned my first Derbies in museum condition. A masterclass in luxury longevity.”
+            </p>
+</div>
+<div class="pt-4 border-t border-surface-container">
+<span class="font-label-uppercase text-label-uppercase text-primary block uppercase font-bold">Lord Alexander Hastings</span>
+<span class="font-caption text-caption text-on-surface-variant">Verified Patron • London, Mayfair</span>
+</div>
+</div>
+</div>
+<!-- Editorial Banner: Leather Care & Longevity Guarantee -->
+<div class="bg-primary text-surface p-8 lg:p-12 flex flex-col md:flex-row items-center justify-between gap-8">
+<div class="flex items-center gap-6">
+<div class="w-16 h-16 rounded-full bg-secondary-container text-on-secondary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-3xl">shield</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-surface mb-1">The Emmalex Seal of Heritage Authentication</h3>
+<p class="font-body-sm text-body-sm text-surface-container-high max-w-xl">
+              Every commission arrives with an engraved brass certification plaque, registered in our Florence archive ledger, granting permanent access to our master workshop restoration services.
+            </p>
+</div>
+</div>
+<a class="shrink-0 px-8 py-4 bg-surface text-primary hover:bg-secondary-container hover:text-on-secondary-fixed font-label-uppercase text-label-uppercase uppercase tracking-[0.2em] transition-colors" href="#masterpieces">
+          View Current Ledger
+        </a>
+</div>
+</div>
+</section>
+<!-- CLIENT-SIDE MICRO-INTERACTIONS SCRIPT -->
+<script>
+    function selectLeather(name, colorCode) {
+      const label = document.getElementById('active-swatch-label');
+      if (label) {
+        label.textContent = name + ' • Tuscan Calf';
+      }
+      const buttons = document.querySelectorAll('.swatch-btn');
+      buttons.forEach(btn => {
+        btn.classList.remove('border-primary');
+        btn.classList.add('border-transparent');
+      });
+      // Set active border on event target button
+      if (window.event && window.event.currentTarget) {
+        window.event.currentTarget.classList.remove('border-transparent');
+        window.event.currentTarget.classList.add('border-primary');
+      }
+    }
+  </script>
+</div></main><footer class="w-full bg-surface-container-low text-on-surface py-space-xl"><div class="max-w-[1440px] mx-auto px-margin-mobile lg:px-margin"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-gutter mb-space-xl"><div class="lg:col-span-4 flex flex-col pr-0 lg:pr-space-lg"><h3 class="font-headline-sm text-headline-sm text-primary mb-space-sm">The Emmalex Gazette</h3><p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">Receive discreet announcements of private leather releases, limited Goodyear-welted commissions, and bespoke tour dates across Europe and North America.</p><div class="flex flex-col sm:flex-row gap-space-xs"><input class="bg-surface px-space-md py-space-sm font-body-sm text-body-sm text-primary placeholder:text-outline focus:outline-none focus:ring-1 focus:ring-secondary flex-grow" placeholder="Enter your correspondence email" type="email"/><button class="bg-primary text-on-primary px-space-md py-space-sm font-label-uppercase text-label-uppercase uppercase tracking-widest hover:bg-secondary hover:text-on-secondary transition-colors" type="button">Subscribe</button></div></div><div class="lg:col-span-2 flex flex-col gap-space-xs"><h4 class="font-label-uppercase text-label-uppercase text-primary uppercase mb-space-xs tracking-wider">Artisan Footwear</h4><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Wholecut Oxfords</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="oxfords-and-derbies" href="#">Split-Toe Derbies</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="loafers" href="#">Belgian &amp; Penny Loafers</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="boots" href="#">Balmoral Boots</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="boots" href="#">Jodhpur Boots</a></div><div class="lg:col-span-2 flex flex-col gap-space-xs"><h4 class="font-label-uppercase text-label-uppercase text-primary uppercase mb-space-xs tracking-wider">The Atelier</h4><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="bespoke-atelier" href="#">Last-Making Protocol</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="bespoke-atelier" href="#">Tannery Provenance</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="heritage" href="#">Artisan Leather Care</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="heritage" href="#">Firenze Workshop Heritage</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Master Cobbler Restoration</a></div><div class="lg:col-span-2 flex flex-col gap-space-xs"><h4 class="font-label-uppercase text-label-uppercase text-primary uppercase mb-space-xs tracking-wider">Concierge</h4><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Private Fittings</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Sizing &amp; Last Guidance</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Global White-Glove Transit</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Complimentary Alterations</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Contact Master Atelier</a></div><div class="lg:col-span-2 flex flex-col gap-space-xs"><h4 class="font-label-uppercase text-label-uppercase text-primary uppercase mb-space-xs tracking-wider">Salons</h4><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Via de' Tornabuoni, 14<br/>50123 Firenze FI, Italy</p><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mt-space-xs">Via Montenapoleone, 8<br/>20121 Milano MI, Italy</p></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md text-on-surface-variant font-caption text-caption"><div class="flex items-center gap-space-md"><span class="font-label-uppercase text-label-uppercase tracking-widest text-primary uppercase">Emmalex Calzature dal 1928</span><span>© 2025 Emmalex Firenze S.r.l. All rights reserved.</span></div><div class="flex items-center gap-space-lg"><a class="hover:text-primary transition-colors" href="#">Client Discretion &amp; Privacy</a><a class="hover:text-primary transition-colors" href="#">Terms of Bespoke Commission</a><a class="hover:text-primary transition-colors" href="#">Patina Authentication</a></div></div></div></footer></body></html>
